@@ -3,13 +3,34 @@ import { useState, useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import ProjectCard from "@/components/ProjectCard";
 import Footer from "@/components/Footer";
+import { Moon, Sun, Code, Git, Globe, Database, Layout, Figma } from "lucide-react";
 
 const Index = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [isDark, setIsDark] = useState(false);
 
   useEffect(() => {
     setIsVisible(true);
+    // Check system preference
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      setIsDark(true);
+      document.documentElement.classList.add("dark");
+    }
   }, []);
+
+  const toggleTheme = () => {
+    setIsDark(!isDark);
+    document.documentElement.classList.toggle("dark");
+  };
+
+  const skills = [
+    { name: "Frontend Development", icon: Layout },
+    { name: "Backend Development", icon: Database },
+    { name: "Version Control", icon: Git },
+    { name: "Web Development", icon: Globe },
+    { name: "UI/UX Design", icon: Figma },
+    { name: "Clean Code", icon: Code },
+  ];
 
   const projects = [
     {
@@ -36,7 +57,19 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className={`min-h-screen flex flex-col ${isDark ? "dark" : ""}`}>
+      <button
+        onClick={toggleTheme}
+        className="fixed right-4 top-20 z-50 p-2 rounded-full bg-background/80 backdrop-blur border shadow-lg transition-colors hover:bg-secondary/80"
+        aria-label="Toggle theme"
+      >
+        {isDark ? (
+          <Sun className="h-6 w-6 text-yellow-500" />
+        ) : (
+          <Moon className="h-6 w-6 text-slate-700" />
+        )}
+      </button>
+
       <Navbar />
       
       {/* Hero Section */}
@@ -49,10 +82,10 @@ const Index = () => {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-gradient">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-gradient animate-fadeIn">
             Welcome to My Portfolio
           </h1>
-          <p className="text-lg sm:text-xl text-muted-foreground mb-8">
+          <p className="text-lg sm:text-xl text-muted-foreground mb-8 animate-fadeIn delay-200">
             I'm a passionate web developer focused on creating interactive and
             engaging digital experiences. Through continuous learning and
             innovation, I strive to build applications that make a difference.
@@ -60,20 +93,44 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Skills Section */}
+      <section id="skills" className="section-padding bg-secondary/30">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl font-bold mb-12 text-center animate-fadeIn">My Skills</h2>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+            {skills.map((skill) => (
+              <div
+                key={skill.name}
+                className="group flex flex-col items-center p-6 glass card-hover animate-fadeIn"
+              >
+                <skill.icon className="h-10 w-10 mb-4 text-primary group-hover:scale-110 transition-transform" />
+                <span className="text-sm font-medium text-center">{skill.name}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Portfolio Section */}
-      <section id="portfolio" className="section-padding bg-secondary/50">
+      <section id="portfolio" className="section-padding">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold mb-12 text-center">My Projects</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {projects.map((project) => (
-              <ProjectCard key={project.title} {...project} />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 perspective-1000">
+            {projects.map((project, index) => (
+              <div
+                key={project.title}
+                className="animate-fadeIn"
+                style={{ animationDelay: `${index * 200}ms` }}
+              >
+                <ProjectCard {...project} />
+              </div>
             ))}
           </div>
         </div>
       </section>
 
       {/* About Section */}
-      <section id="about" className="section-padding">
+      <section id="about" className="section-padding bg-secondary/30">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-8">About Me</h2>
           <p className="text-lg text-muted-foreground mb-6">
@@ -92,7 +149,7 @@ const Index = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="section-padding bg-secondary/50">
+      <section id="contact" className="section-padding">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-8">Get in Touch</h2>
           <p className="text-lg text-muted-foreground mb-8">
@@ -101,7 +158,7 @@ const Index = () => {
           </p>
           <a
             href="mailto:your.email@example.com"
-            className="inline-block px-8 py-3 rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
+            className="inline-block px-8 py-3 rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition-colors animate-fadeIn"
           >
             Send me a message
           </a>
