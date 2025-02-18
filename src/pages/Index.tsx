@@ -1,12 +1,114 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { useState, useEffect } from "react";
+import Navbar from "@/components/Navbar";
+import ProjectCard from "@/components/ProjectCard";
+import Footer from "@/components/Footer";
 
 const Index = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
+
+  const projects = [
+    {
+      title: "Rock Paper Scissors Game",
+      description:
+        "An interactive game built with modern web technologies, featuring smooth animations and engaging user interface.",
+      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
+      href: "#",
+    },
+    {
+      title: "Weather Dashboard",
+      description:
+        "A responsive weather application that provides real-time weather data with a clean, intuitive interface.",
+      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
+      href: "#",
+    },
+    {
+      title: "Task Manager",
+      description:
+        "A productivity tool built with React, featuring drag-and-drop functionality and local storage integration.",
+      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+      href: "#",
+    },
+  ];
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen flex flex-col">
+      <Navbar />
+      
+      {/* Hero Section */}
+      <section
+        id="home"
+        className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center min-h-screen"
+      >
+        <div
+          className={`max-w-3xl mx-auto text-center transition-all duration-1000 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+          }`}
+        >
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-gradient">
+            Welcome to My Portfolio
+          </h1>
+          <p className="text-lg sm:text-xl text-muted-foreground mb-8">
+            I'm a passionate web developer focused on creating interactive and
+            engaging digital experiences. Through continuous learning and
+            innovation, I strive to build applications that make a difference.
+          </p>
+        </div>
+      </section>
+
+      {/* Portfolio Section */}
+      <section id="portfolio" className="section-padding bg-secondary/50">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl font-bold mb-12 text-center">My Projects</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {projects.map((project) => (
+              <ProjectCard key={project.title} {...project} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section id="about" className="section-padding">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-3xl font-bold mb-8">About Me</h2>
+          <p className="text-lg text-muted-foreground mb-6">
+            As a web developer, I'm constantly exploring new technologies and
+            pushing the boundaries of what's possible on the web. My journey in
+            web development started with a simple curiosity about how websites
+            work, and has evolved into a passion for creating intuitive,
+            user-friendly applications.
+          </p>
+          <p className="text-lg text-muted-foreground">
+            When I'm not coding, you can find me learning about new web
+            technologies, contributing to open-source projects, or helping other
+            developers in the community.
+          </p>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="section-padding bg-secondary/50">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-3xl font-bold mb-8">Get in Touch</h2>
+          <p className="text-lg text-muted-foreground mb-8">
+            I'm always open to new opportunities and collaborations. Feel free to
+            reach out if you'd like to work together or just want to say hello!
+          </p>
+          <a
+            href="mailto:your.email@example.com"
+            className="inline-block px-8 py-3 rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
+          >
+            Send me a message
+          </a>
+        </div>
+      </section>
+
+      <Footer />
     </div>
   );
 };
