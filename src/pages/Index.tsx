@@ -1,9 +1,8 @@
-
 import { useState, useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import ProjectCard from "@/components/ProjectCard";
 import Footer from "@/components/Footer";
-import { Moon, Sun, Code, Git, Globe, Database, Layout, Figma } from "lucide-react";
+import { Moon, Sun, Code, Github, Globe, Database, Layout, Figma } from "lucide-react";
 
 const Index = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -26,7 +25,7 @@ const Index = () => {
   const skills = [
     { name: "Frontend Development", icon: Layout },
     { name: "Backend Development", icon: Database },
-    { name: "Version Control", icon: Git },
+    { name: "Version Control", icon: Github },
     { name: "Web Development", icon: Globe },
     { name: "UI/UX Design", icon: Figma },
     { name: "Clean Code", icon: Code },
@@ -38,21 +37,21 @@ const Index = () => {
       description:
         "An interactive game built with modern web technologies, featuring smooth animations and engaging user interface.",
       image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
-      href: "#",
+      href: "https://github.com/zuni-developer",
     },
     {
       title: "Weather Dashboard",
       description:
         "A responsive weather application that provides real-time weather data with a clean, intuitive interface.",
       image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
-      href: "#",
+      href: "https://github.com/zuni-developer",
     },
     {
       title: "Task Manager",
       description:
         "A productivity tool built with React, featuring drag-and-drop functionality and local storage integration.",
       image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
-      href: "#",
+      href: "https://github.com/zuni-developer",
     },
   ];
 

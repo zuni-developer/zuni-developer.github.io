@@ -1,22 +1,17 @@
 
-import { Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 const Footer = () => {
   const socialLinks = [
     {
       name: "GitHub",
-      href: "#",
+      href: "https://github.com/zuni-developer",
       icon: Github,
     },
     {
       name: "LinkedIn",
-      href: "#",
+      href: "https://www.linkedin.com/in/zunaira-sabir-b1878331a",
       icon: Linkedin,
-    },
-    {
-      name: "Twitter",
-      href: "#",
-      icon: Twitter,
     },
     {
       name: "Email",
@@ -34,7 +29,9 @@ const Footer = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-foreground/60 hover:text-foreground transition-colors"
+                className="text-foreground/60 hover:text-primary transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <span className="sr-only">{item.name}</span>
                 <item.icon className="h-6 w-6" />
@@ -45,7 +42,7 @@ const Footer = () => {
             "Building digital experiences that inspire and innovate."
           </p>
           <p className="mt-4 text-center text-sm text-foreground/40">
-            © {new Date().getFullYear()} Your Name. All rights reserved.
+            © {new Date().getFullYear()} Zunaira Sabir. All rights reserved.
           </p>
         </div>
       </div>
