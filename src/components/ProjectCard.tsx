@@ -1,5 +1,6 @@
 
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 interface ProjectCardProps {
   title: string;
@@ -9,6 +10,8 @@ interface ProjectCardProps {
 }
 
 const ProjectCard = ({ title, description, image, href }: ProjectCardProps) => {
+  const projectPath = title.toLowerCase().replace(/\s+/g, '-');
+  
   return (
     <div className="group glass card-hover p-4 relative overflow-hidden transform transition-all duration-500 hover:rotate-y-5">
       <div className="aspect-video rounded-lg overflow-hidden mb-4 relative">
@@ -21,12 +24,12 @@ const ProjectCard = ({ title, description, image, href }: ProjectCardProps) => {
       </div>
       <h3 className="text-xl font-semibold mb-2 text-gradient">{title}</h3>
       <p className="text-muted-foreground mb-4">{description}</p>
-      <a
-        href={href}
+      <Link
+        to={`/project/${projectPath}`}
         className="inline-flex items-center text-primary hover:text-primary/80 transition-colors group-hover:translate-x-2 duration-300"
       >
         Learn More <ArrowRight className="ml-2 h-4 w-4" />
-      </a>
+      </Link>
     </div>
   );
 };
