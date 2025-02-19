@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import ProjectCard from "@/components/ProjectCard";
 import Footer from "@/components/Footer";
-import { Moon, Sun, Code, Github, Globe, Database, Layout, Figma } from "lucide-react";
+import { Moon, Sun, Code, Github, Globe, Database, Layout, Figma, Award } from "lucide-react";
 
 const Index = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -52,6 +52,17 @@ const Index = () => {
         "A productivity tool built with React, featuring drag-and-drop functionality and local storage integration.",
       image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
       href: "https://github.com/zuni-developer",
+    },
+  ];
+
+  const certifications = [
+    {
+      title: "Introduction to C++",
+      issuer: "SoloLearn",
+      date: "February 2025",
+      credential: "CC-18XYG554",
+      description: "Comprehensive course covering C++ fundamentals, demonstrating theoretical and practical understanding of the language.",
+      icon: Code,
     },
   ];
 
@@ -122,6 +133,40 @@ const Index = () => {
                 style={{ animationDelay: `${index * 200}ms` }}
               >
                 <ProjectCard {...project} />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Certifications Section */}
+      <section id="certifications" className="section-padding bg-secondary/30">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl font-bold mb-12 text-center">Certifications</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {certifications.map((cert, index) => (
+              <div
+                key={cert.credential}
+                className="glass p-6 card-hover animate-fadeIn"
+                style={{ animationDelay: `${index * 200}ms` }}
+              >
+                <div className="flex items-start space-x-4">
+                  <div className="p-3 rounded-full bg-primary/10">
+                    <Award className="h-6 w-6 text-primary" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-semibold mb-2">{cert.title}</h3>
+                    <p className="text-muted-foreground mb-2">
+                      {cert.issuer} • {cert.date}
+                    </p>
+                    <p className="text-sm text-muted-foreground mb-2">
+                      {cert.description}
+                    </p>
+                    <p className="text-sm text-muted-foreground">
+                      Credential ID: {cert.credential}
+                    </p>
+                  </div>
+                </div>
               </div>
             ))}
           </div>
