@@ -1,5 +1,5 @@
 
-import { Award } from "lucide-react";
+import { Award, Shield, Code, Terminal, Globe, BookOpen } from "lucide-react";
 import { certifications } from "@/data/portfolio-data";
 
 const Certifications = () => {
@@ -16,7 +16,7 @@ const Certifications = () => {
             >
               <div className="flex items-start space-x-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <Award className="h-6 w-6 text-primary" />
+                  {cert.icon && <cert.icon className="h-6 w-6 text-primary" />}
                 </div>
                 <div className="flex-1">
                   <h3 className="text-xl font-semibold mb-2">{cert.title}</h3>

@@ -1,5 +1,5 @@
 
-import { Code, Github, Globe, Database, Layout, Figma } from "lucide-react";
+import { Code, Github, Globe, Database, Layout, Figma, Award, Shield, Terminal, BookOpen } from "lucide-react";
 import { type LucideIcon } from "lucide-react";
 
 export interface Skill {
@@ -66,25 +66,85 @@ export const projects: Project[] = [
 
 export const certifications: Certification[] = [
   {
+    title: "Google Project Management",
+    issuer: "Google via Coursera",
+    date: "January 28, 2025",
+    credential: "DT054GH7YTN",
+    description: "Professional certificate covering six courses, including project planning, execution, and Agile methodologies for both traditional and agile projects.",
+    icon: BookOpen,
+  },
+  {
     title: "Introduction to C++",
     issuer: "SoloLearn",
-    date: "February 2025",
+    date: "February 15, 2025",
     credential: "CC-18XYG554",
     description: "Comprehensive course covering C++ fundamentals, demonstrating theoretical and practical understanding of the language.",
     icon: Code,
   },
+  {
+    title: "C++ Intermediate",
+    issuer: "SoloLearn",
+    date: "February 21, 2025",
+    credential: "CC-ATCDZHI2",
+    description: "Advanced C++ concepts including memory management, OOP principles, and STL implementation.",
+    icon: Code,
+  },
+  {
+    title: "Introduction to Cybersecurity",
+    issuer: "Cisco Networking Academy",
+    date: "January 26, 2025",
+    credential: "Verified Badge",
+    description: "Fundamentals of cybersecurity including online safety, common threats, attacks, vulnerabilities and protection methods.",
+    icon: Shield,
+  },
+  {
+    title: "Pentest Cyber Specialist Program",
+    issuer: "NITSEP",
+    date: "January 27, 2025",
+    credential: "1cabea48c6",
+    description: "Comprehensive cybersecurity certification covering Cisco CCNA, CEH, Cybersecurity Monitoring, WiFi Hacking, Penetration Testing, and Bug Bounty.",
+    icon: Shield,
+  },
+  {
+    title: "Introduction to JavaScript",
+    issuer: "Simplilearn",
+    date: "March 7, 2025",
+    credential: "8011181",
+    description: "JavaScript foundations for beginners, covering syntax, variables, functions, and DOM manipulation.",
+    icon: Terminal,
+  },
+  {
+    title: "Web Development",
+    issuer: "SoloLearn",
+    date: "March 6, 2025",
+    credential: "CC-2K4VGAAW",
+    description: "Comprehensive web development course covering HTML, CSS, JavaScript and responsive design principles.",
+    icon: Globe,
+  }
 ];
 
 export const experiences: Experience[] = [
   {
-    title: "Frontend Development Intern",
+    title: "Web Development Intern",
     company: "CodeAlpha",
-    period: "March 1st, 2025 - March 30th, 2025",
+    period: "February 25th, 2025 - May 25th, 2025",
     description: [
-      "Selected for a month-long intensive frontend development internship program",
-      "Focus on learning new skills and deeper understanding of frontend concepts",
-      "Hands-on application of knowledge through practical projects",
-      "Collaboration with team members on various development tasks",
+      "Selected for a 3-month intensive web development internship program",
+      "Learning new skills with deeper understanding of concepts through hands-on application",
+      "Working on real-world projects under the guidance of experienced mentors",
+      "Collaborating with team members using industry standard development workflows",
+    ],
+    status: "Upcoming"
+  },
+  {
+    title: "Front-End Development Intern",
+    company: "DevelopersHub Corporation",
+    period: "March 1st, 2025 - Ongoing",
+    description: [
+      "Part of a dynamic community dedicated to innovation and excellence in the tech industry",
+      "Access to exclusive training materials, collaborative tools, and mentorship from experienced professionals",
+      "Contributing to meaningful projects with potential impact on the tech landscape",
+      "Assigned DHC-209 ID for accessing organization resources and development platforms",
     ],
     status: "Upcoming"
   }
