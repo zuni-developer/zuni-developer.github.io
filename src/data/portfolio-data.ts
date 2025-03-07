@@ -49,6 +49,27 @@ export const projects: Project[] = [
     href: "https://github.com/zuni-developer",
   },
   {
+    title: "Age Calculator",
+    description:
+      "A utility app that calculates precise age based on birthdate, displaying years, months, and days with a clean interface.",
+    image: "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d",
+    href: "https://github.com/zuni-developer",
+  },
+  {
+    title: "Zodiac Finder",
+    description:
+      "An application that determines your zodiac sign based on birth date, providing insights about personality traits and compatibility.",
+    image: "https://images.unsplash.com/photo-1515894274780-4a6d1fbd5079",
+    href: "https://github.com/zuni-developer",
+  },
+  {
+    title: "Temperature Converter",
+    description:
+      "A simple yet effective tool that converts temperatures between Celsius, Fahrenheit, and Kelvin with instant results.",
+    image: "https://images.unsplash.com/photo-1581343109297-b0723170b907",
+    href: "https://github.com/zuni-developer",
+  },
+  {
     title: "Weather Dashboard",
     description:
       "A responsive weather application that provides real-time weather data with a clean, intuitive interface.",
