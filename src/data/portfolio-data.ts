@@ -1,5 +1,4 @@
-
-import { Code, Github, Globe, Database, Layout, Figma, Award, Shield, Terminal, BookOpen } from "lucide-react";
+import { Code, Github, Globe, Database, Layout, Figma, Award, Shield, Terminal, BookOpen, VsCode, GitBranch, Html5, Css3, Python, Canva, Php, Javascript, Bootstrap, } from "lucide-react";
 import { type LucideIcon } from "lucide-react";
 
 export interface Skill {
@@ -31,13 +30,41 @@ export interface Experience {
   status?: string;
 }
 
-export const skills: Skill[] = [
-  { name: "Frontend Development", icon: Layout },
-  { name: "Backend Development", icon: Database },
-  { name: "Version Control", icon: Github },
-  { name: "Web Development", icon: Globe },
-  { name: "UI/UX Design", icon: Figma },
-  { name: "Clean Code", icon: Code },
+export interface SkillCategory {
+  title: string;
+  skills: Skill[];
+}
+
+export const skills: SkillCategory[] = [
+  {
+    title: "Technologies",
+    skills: [
+      { name: "VS Code", icon: VsCode },
+      { name: "Git", icon: GitBranch },
+      { name: "GitHub", icon: Github },
+      { name: "Figma", icon: Figma },
+      { name: "Canva", icon: Canva },
+      { name: "Web Development", icon: Globe },
+      { name: "UI/UX Design", icon: Layout },
+    ],
+  },
+  {
+    title: "Frameworks",
+    skills: [
+      { name: "Bootstrap", icon: Bootstrap },
+    ],
+  },
+  {
+    title: "Languages",
+    skills: [
+      { name: "HTML5", icon: Html5 },
+      { name: "CSS3", icon: Css3 },
+      { name: "Python", icon: Python },
+      { name: "C++", icon: Code },
+      { name: "PHP", icon: Php },
+      { name: "JavaScript", icon: Javascript },
+    ],
+  },
 ];
 
 export const projects: Project[] = [
