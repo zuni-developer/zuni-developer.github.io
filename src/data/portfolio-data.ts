@@ -180,18 +180,30 @@ export const experiences: Experience[] = [
       "Working on real-world projects under the guidance of experienced mentors",
       "Collaborating with team members using industry standard development workflows",
     ],
-    status: "Upcoming"
+    status: "Completed"
   },
   {
     title: "Front-End Development Intern",
     company: "DevelopersHub Corporation",
-    period: "March 1st, 2025 - Ongoing",
+    period: "March 1st, 2025 - April 15th, 2025",
     description: [
       "Part of a dynamic community dedicated to innovation and excellence in the tech industry",
       "Access to exclusive training materials, collaborative tools, and mentorship from experienced professionals",
       "Contributing to meaningful projects with potential impact on the tech landscape",
       "Assigned DHC-209 ID for accessing organization resources and development platforms",
     ],
-    status: "Upcoming"
+    status: "Completed"
+  },
+  {
+    title: "Time Stamping Intern",
+    company: "Bayyinah | Nouman Ali Khan",
+    period: "July 1st, 2025 - August 31st, 2025",
+    description: [
+      "Selected for Bayyinah’s Summer Internship Program focused on Qur’anic studies",
+      "Time-stamped verses by noting start and end points with accuracy and consistency",
+      "Tagged ayahs with appropriate themes and subthemes to maintain high-quality categorization",
+      "Collaborated with the team leader by submitting finalized work and incorporating feedback",
+    ],
+    status: "Completed"
   }
 ];
