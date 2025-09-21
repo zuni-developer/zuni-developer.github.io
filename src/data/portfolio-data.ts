@@ -112,27 +112,35 @@ export const projects: Project[] = [
 
 export const certifications: Certification[] = [
   {
-    title: "Google Project Management",
-    issuer: "Google via Coursera",
-    date: "January 28, 2025",
-    credential: "DT054GH7YTN",
-    description: "Professional certificate covering six courses, including project planning, execution, and Agile methodologies for both traditional and agile projects.",
+    title: "TechWeek workshop",
+    issuer: "BUITEMS Deveopers Club (BDC)",
+    date: "July 12, 2024",
+    credential: "",
+    description: "new trends in tech, practical web and programming skills, introductory concepts in ML and blockchain, and GitHub fundamentals",
+    icon: Terminal,
+  },
+  {
+    title: "Cybersecurity Traning  Workshop",
+    issuer: "Ignite",
+    date: "August 25, 2024",
+    credential: "",
+    description: "Participated in a practical cybersecurity workshop focused on core security concepts, threat awareness, and hands-on techniques for strengthening digital safety.",
+    icon: Shield,
+  },
+  {
+    title: "GREAT FUTURE TALENT OLYMPIAD 2024",
+    issuer: "Great Future Pakistan",
+    date: "September 24, 2024",
+    credential: "",
+    description: "Participated in the Great Future Talent Olympiad Batch-V 2024, demonstrating problem-solving, analytical, and technical skills at a national level competition.",
     icon: BookOpen,
   },
   {
-    title: "Introduction to C++",
-    issuer: "SoloLearn",
-    date: "February 15, 2025",
-    credential: "CC-18XYG554",
-    description: "Comprehensive course covering C++ fundamentals, demonstrating theoretical and practical understanding of the language.",
-    icon: Code,
-  },
-  {
-    title: "C++ Intermediate",
-    issuer: "SoloLearn",
-    date: "February 21, 2025",
-    credential: "CC-ATCDZHI2",
-    description: "Advanced C++ concepts including memory management, OOP principles, and STL implementation.",
+    title: "Cybersecurity Career Week 2024 – Interactive Session",
+    issuer: "Hack With Her",
+    date: "October 16, 2024",
+    credential: "",
+    description: "Actively participated in ‘The Hackers Among Us: The Gen-Z Guide to Careers in Cybersecurity and Surviving Online’, gaining practical exposure to cybersecurity fundamentals, log analysis, ethical hacking, and digital safety practices.",
     icon: Code,
   },
   {
@@ -152,12 +160,20 @@ export const certifications: Certification[] = [
     icon: Shield,
   },
   {
-    title: "Introduction to JavaScript",
-    issuer: "Simplilearn",
-    date: "March 7, 2025",
-    credential: "8011181",
-    description: "JavaScript foundations for beginners, covering syntax, variables, functions, and DOM manipulation.",
-    icon: Terminal,
+    title: "Google Project Management",
+    issuer: "Google via Coursera",
+    date: "January 28, 2025",
+    credential: "DT054GH7YTN",
+    description: "Professional certificate covering six courses, including project planning, execution, and Agile methodologies for both traditional and agile projects.",
+    icon: BookOpen,
+  },
+  {
+    title: "Introduction to Dark Web, Aunonymity and Cryptocurrency",
+    issuer: "EC - Council",
+    date: "Febuary 1, 2025",
+    credential: "386637",
+    description: "Explored Dark Web fundamentals, online anonymity techniques, and the role of cryptocurrencies in cybersecurity and digital ecosystems through EC-Council’s training.",
+    icon: Globe,
   },
   {
     title: "Web Development",
@@ -166,7 +182,15 @@ export const certifications: Certification[] = [
     credential: "CC-2K4VGAAW",
     description: "Comprehensive web development course covering HTML, CSS, JavaScript and responsive design principles.",
     icon: Globe,
-  }
+  },
+  {
+    title: "Linux Security Basics for Beginners",
+    issuer: "Udemy",
+    date: "August 15, 2025",
+    credential: "UC-8def2169-fa20-4213-9113-01810fdd62ea",
+    description: "Foundational course introducing core Linux security concepts, covering user management, permissions, file system security, and basic hardening practices to build a strong understanding of securing Linux systems.",
+    icon: Code,
+  },
 ];
 
 export const experiences: Experience[] = [
