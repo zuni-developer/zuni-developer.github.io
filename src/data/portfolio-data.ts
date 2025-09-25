@@ -73,43 +73,71 @@ export const projects: Project[] = [
     title: "Rock Paper Scissors Game",
     description:
       "An interactive game built with modern web technologies, featuring smooth animations and engaging user interface.",
-    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
-    href: "https://github.com/zuni-developer",
+    image: "/assets/Rock_Paper_Scissors_Game",
+    href: "https://github.com/zuni-developer/WD-mini-projects/tree/main/Rock%20Paper%20Scissors",
   },
   {
-    title: "Age Calculator",
+    title: "Pretty Plates ",
     description:
-      "A utility app that calculates precise age based on birthdate, displaying years, months, and days with a clean interface.",
-    image: "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d",
-    href: "https://github.com/zuni-developer",
+      "Designed prototypes and developed a web application where user food preferences were gathered through surveys. Applied probability principles to analyze responses and generate menu recommendations tailored to majority preferences.",
+    image: "/assets/Pretty_Plates",
+    href: "https://github.com/zuni-developer/Pretty_Plates",
   },
   {
     title: "Zodiac Finder",
     description:
-      "An application that determines your zodiac sign based on birth date, providing insights about personality traits and compatibility.",
-    image: "https://images.unsplash.com/photo-1515894274780-4a6d1fbd5079",
-    href: "https://github.com/zuni-developer",
+      "Created a web app that calculates and displays users’ zodiac signs based on their date of birth with an interactive user-friendly interface",
+    image: "/assets/Zodiac_Finder",
+    href: "https://github.com/zuni-developer/WD-mini-projects/tree/main/Zodiac%20Finder",
   },
   {
     title: "Temperature Converter",
     description:
       "A simple yet effective tool that converts temperatures between Celsius, Fahrenheit, and Kelvin with instant results.",
-    image: "https://images.unsplash.com/photo-1581343109297-b0723170b907",
-    href: "https://github.com/zuni-developer",
+    image: "/assets/Temperature_Convertor",
+    href: "https://github.com/zuni-developer/WD-mini-projects/tree/main/Temperature%20Convertor",
   },
   {
-    title: "Weather Dashboard",
+    title: "Daily Whisper",
     description:
-      "A responsive weather application that provides real-time weather data with a clean, intuitive interface.",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
-    href: "https://github.com/zuni-developer",
+      "Designed high-fidelity mockups for a journaling mobile app that enables users to record daily thoughts,track moods, and reflect on personal growth.",
+    image: "/assets/Daily_Whisper",
+    href: "https://github.com/zuni-developer/Daily_Whisper",
   },
   {
-    title: "Task Manager",
+    title: "Game Galaxy",
     description:
-      "A productivity tool built with React, featuring drag-and-drop functionality and local storage integration.",
-    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
-    href: "https://github.com/zuni-developer",
+      "Developed a terminal-based gaming platform in C++ offering multiple games.",
+    image: "/assets/Game_Galaxy",
+    href: "https://github.com/zuni-developer/Game%20Galaxy",
+  },
+  {
+    title: "Whack-a-Mole",
+    description:
+      "Implemented a terminal-based interactive game using object-oriented programming, featuring dynamic mole appearances and score tracking.",
+    image: "/assets/Wack-a-Mole",
+    href: "https://github.com/zuni-developer/OOP-mini-projects/blob/main/Whack%20A%20Mole.cpp",
+  },
+  {
+    title: "Age-based recommender",
+    description:
+      "Developed an terminal-based interactive program in C++ recommending activities based on user age.",
+    image: "/assets/Age-based_recommender",
+    href: "https://github.com/zuni-developer/Age-based%20recommender",
+  },
+  {
+    title: "Music Player",
+    description:
+      "Built a browser based music player with playlist management, search, categorization, and core controls for a modern, interactive experience.",
+    image: "/assets/Music_Player",
+    href: "https://github.com/zuni-developer/CodeAlpha_tasks/tree/main/Task%2302_Music_Player",
+  },
+  {
+    title: "Fortune Teller",
+    description:
+      "Built a console-based program that takes user date of birth, determines their astrological sign, and generates personalized fortunes with input validation.",
+    image: "/assets/Fortune_Teller",
+    href: "https://github.com/zuni-developer/PF-mini-projects/blob/main/fortune%20teller.cpp",
   },
 ];
 
