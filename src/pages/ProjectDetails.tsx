@@ -37,17 +37,16 @@ const ProjectDetails = () => {
             <div className="space-y-4">
               <h2 className="text-2xl font-semibold">Features</h2>
               <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                <li>Responsive design for all devices</li>
-                <li>Modern and intuitive user interface</li>
-                <li>Seamless user experience</li>
-                <li>Performance optimized</li>
+                {project.features.map((feature, index) => (
+                  <li key={index}>{feature}</li>
+                ))}
               </ul>
             </div>
-            
+
             <div className="space-y-4">
               <h2 className="text-2xl font-semibold">Technologies Used</h2>
               <div className="flex flex-wrap gap-2">
-                {["React", "TypeScript", "Tailwind CSS", "Vite"].map((tech) => (
+                {project.technologies.map((tech) => (
                   <span
                     key={tech}
                     className="px-3 py-1 rounded-full bg-primary/10 text-primary text-sm"
@@ -79,13 +78,13 @@ const ProjectDetails = () => {
               />
             </div>
             
-            <div className="glass p-6 rounded-lg">
+            {/*<div className="glass p-6 rounded-lg">
               <h2 className="text-2xl font-semibold mb-4">Live Preview</h2>
               <p className="text-muted-foreground">
                 Experience the project in action. This section would typically contain
                 an interactive demo or screenshots of the project's key features.
               </p>
-            </div>
+            </div>*/}
           </div>
         </div>
       </div>
