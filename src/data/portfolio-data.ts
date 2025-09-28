@@ -75,7 +75,7 @@ export const projects: Project[] = [
     title: "Rock Paper Scissors Game",
     description:
       "An interactive game built with modern web technologies, featuring smooth animations and engaging user interface.",
-    image: "/assets/Rock_Paper_Scissors_Game",
+    image: "/assets/Rock_Paper_Scissors_Game.jpg",
     href: "https://github.com/zuni-developer/WD-mini-projects/tree/main/Rock%20Paper%20Scissors",
     technologies: ["HTML", "CSS", "JavaScript"],
     features: [
@@ -89,7 +89,7 @@ export const projects: Project[] = [
     title: "Pretty Plates",
     description:
       "Designed prototypes and developed a web application where user food preferences were gathered through surveys. Applied probability principles to analyze responses and generate menu recommendations tailored to majority preferences.",
-    image: "/assets/Pretty_Plates",
+    image: "/assets/Pretty_Plates.jpg",
     href: "https://github.com/zuni-developer/Pretty_Plates",
     technologies: ["HTML", "CSS", "JavaScript", "Figma"],
     features: [
@@ -103,7 +103,7 @@ export const projects: Project[] = [
     title: "Zodiac Finder",
     description:
       "Created a web app that calculates and displays users’ zodiac signs based on their date of birth with an interactive user-friendly interface.",
-    image: "/assets/Zodiac_Finder",
+    image: "/assets/Zodiac_Finder.jpg",
     href: "https://github.com/zuni-developer/WD-mini-projects/tree/main/Zodiac%20Finder",
     technologies: ["HTML", "CSS", "JavaScript"],
     features: [
@@ -117,7 +117,7 @@ export const projects: Project[] = [
     title: "Temperature Converter",
     description:
       "A simple yet effective tool that converts temperatures between Celsius, Fahrenheit, and Kelvin with instant results.",
-    image: "/assets/Temperature_Convertor",
+    image: "/assets/Temperature_Convertor.jpg",
     href: "https://github.com/zuni-developer/WD-mini-projects/tree/main/Temperature%20Convertor",
     technologies: ["HTML", "CSS", "JavaScript"],
     features: [
@@ -131,7 +131,7 @@ export const projects: Project[] = [
     title: "Daily Whisper",
     description:
       "Designed high-fidelity mockups for a journaling mobile app that enables users to record daily thoughts, track moods, and reflect on personal growth.",
-    image: "/assets/Daily_Whisper",
+    image: "/assets/Daily_Whisper.jpeg",
     href: "https://github.com/zuni-developer/Daily_Whisper",
     technologies: ["Figma", "StarUML", "SRS Documentation"],
     features: [
@@ -145,7 +145,7 @@ export const projects: Project[] = [
     title: "Game Galaxy",
     description:
       "Developed a terminal-based gaming platform in C++ offering multiple games.",
-    image: "/assets/Game_Galaxy",
+    image: "/assets/Game_Galaxy.jpeg",
     href: "https://github.com/zuni-developer/Game%20Galaxy",
     technologies: ["C++"],
     features: [
@@ -158,7 +158,7 @@ export const projects: Project[] = [
     title: "Whack-a-Mole",
     description:
       "Implemented a terminal-based interactive game using object-oriented programming, featuring dynamic mole appearances and score tracking.",
-    image: "/assets/Wack-a-Mole",
+    image: "/assets/Wack-a-Mole.png",
     href: "https://github.com/zuni-developer/OOP-mini-projects/blob/main/Whack%20A%20Mole.cpp",
     technologies: ["C++"],
     features: [
@@ -172,7 +172,7 @@ export const projects: Project[] = [
     title: "Age-based Recommender",
     description:
       "Developed a terminal-based interactive program in C++ recommending activities based on user age.",
-    image: "/assets/Age-based_recommender",
+    image: "/assets/Age-based_recommender.jpeg",
     href: "https://github.com/zuni-developer/Age-based%20recommender",
     technologies: ["C++"],
     features: [
@@ -186,7 +186,7 @@ export const projects: Project[] = [
     title: "Music Player",
     description:
       "Built a browser-based music player with playlist management, search, categorization, and core controls for a modern, interactive experience.",
-    image: "/assets/Music_Player",
+    image: "/assets/Music_Player.png",
     href: "https://github.com/zuni-developer/CodeAlpha_tasks/tree/main/Task%2302_Music_Player",
     technologies: ["HTML", "CSS", "JavaScript"],
     features: [
@@ -200,7 +200,7 @@ export const projects: Project[] = [
     title: "Fortune Teller",
     description:
       "Built a console-based program that takes user date of birth, determines their astrological sign, and generates personalized fortunes with input validation.",
-    image: "/assets/Fortune_Teller",
+    image: "/assets/Fortune_Teller.jpeg",
     href: "https://github.com/zuni-developer/PF-mini-projects/blob/main/fortune%20teller.cpp",
     technologies: ["C++"],
     features: [
