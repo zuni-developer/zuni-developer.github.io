@@ -200,7 +200,7 @@ export const projects: Project[] = [
     title: "Fortune Teller",
     description:
       "Built a console-based program that takes user date of birth, determines their astrological sign, and generates personalized fortunes with input validation.",
-    image: "/assets/Fortune_Teller.jpeg",
+    image: "/assets/Fortune_Teller.jpg",
     href: "https://github.com/zuni-developer/PF-mini-projects/blob/main/fortune%20teller.cpp",
     technologies: ["C++"],
     features: [
