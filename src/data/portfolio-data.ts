@@ -293,6 +293,14 @@ export const certifications: Certification[] = [
     description: "Foundational course introducing core Linux security concepts, covering user management, permissions, file system security, and basic hardening practices to build a strong understanding of securing Linux systems.",
     icon: Code,
   },
+  {
+    title: "SEO & Google PPC Training",
+    issuer: "Digital Transformation Awareness Network - DTAN",
+    date: "August 19, 2025",
+    credential: "",
+    description: "Completed a professional training program focused on Search Engine Optimization (SEO) strategies and Google Pay-Per-Click (PPC) advertising. Gained practical knowledge in keyword research, ad campaign creation, performance tracking, and optimization techniques to improve online visibility and digital marketing effectiveness.",
+    icon: Code,
+  },
 ];
 
 export const experiences: Experience[] = [
