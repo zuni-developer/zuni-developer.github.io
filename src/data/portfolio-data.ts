@@ -158,7 +158,7 @@ export const projects: Project[] = [
     title: "Whack-a-Mole",
     description:
       "Implemented a terminal-based interactive game using object-oriented programming, featuring dynamic mole appearances and score tracking.",
-    image: "/assets/Wack-a-Mole.png",
+    image: "/assets/Wack-a-Mole.jpg",
     href: "https://github.com/zuni-developer/OOP-mini-projects/blob/main/Whack%20A%20Mole.cpp",
     technologies: ["C++"],
     features: [
