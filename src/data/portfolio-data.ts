@@ -146,7 +146,7 @@ export const projects: Project[] = [
     description:
       "Developed a terminal-based gaming platform in C++ offering multiple games.",
     image: "/assets/Game_Galaxy.jpeg",
-    href: "https://github.com/zuni-developer/Game%20Galaxy",
+    href: "https://github.com/zuni-developer/PF-mini-projects/blob/main/Game%20Galaxy.cpp",
     technologies: ["C++"],
     features: [
       "Menu-driven console application",

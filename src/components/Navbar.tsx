@@ -18,7 +18,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <a href="#" className="text-xl font-semibold text-gradient">
-              Portfolio
+              Zunaira Sabir
             </a>
           </div>
           <div className="hidden md:block">
