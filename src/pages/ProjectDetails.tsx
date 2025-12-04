@@ -1,4 +1,3 @@
-
 import { useParams, Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import { projects } from "@/data/portfolio-data";
@@ -28,12 +27,12 @@ const ProjectDetails = () => {
           <ArrowLeft className="mr-2 h-4 w-4" />
           Back to Portfolio
         </Link>
-        
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div className="space-y-6">
             <h1 className="text-4xl font-bold text-gradient">{project.title}</h1>
             <p className="text-lg text-muted-foreground">{project.description}</p>
-            
+
             <div className="space-y-4">
               <h2 className="text-2xl font-semibold">Features</h2>
               <ul className="list-disc list-inside space-y-2 text-muted-foreground">
@@ -56,8 +55,9 @@ const ProjectDetails = () => {
                 ))}
               </div>
             </div>
-            
-            {/*<div className="pt-4">
+
+            {/*
+            <div className="pt-4">
               <Button
                 asChild
                 className="bg-primary hover:bg-primary/90"
@@ -67,8 +67,9 @@ const ProjectDetails = () => {
                 </a>
               </Button>
             </div>
-          </div>*/}
-          
+            */}
+          </div>
+
           <div className="space-y-6">
             <div className="aspect-video rounded-lg overflow-hidden glass">
               <img
@@ -77,14 +78,16 @@ const ProjectDetails = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            
-            {/*<div className="glass p-6 rounded-lg">
+
+            {/*
+            <div className="glass p-6 rounded-lg">
               <h2 className="text-2xl font-semibold mb-4">Live Preview</h2>
               <p className="text-muted-foreground">
                 Experience the project in action. This section would typically contain
                 an interactive demo or screenshots of the project's key features.
               </p>
-            </div>*/}
+            </div>
+            */}
           </div>
         </div>
       </div>
