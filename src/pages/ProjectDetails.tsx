@@ -57,7 +57,7 @@ const ProjectDetails = () => {
               </div>
             </div>
             
-            <div className="pt-4">
+            {/*<div className="pt-4">
               <Button
                 asChild
                 className="bg-primary hover:bg-primary/90"
@@ -67,7 +67,7 @@ const ProjectDetails = () => {
                 </a>
               </Button>
             </div>
-          </div>
+          </div>*/}
           
           <div className="space-y-6">
             <div className="aspect-video rounded-lg overflow-hidden glass">
